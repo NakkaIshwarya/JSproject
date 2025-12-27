@@ -16,7 +16,7 @@ function loadRandomWord() {
 }
 
 function updateGuessText(){
-    guessText.textContent = `${wrongattempts}/ ${maxAttempts}`;
+    guessText.textContent = `Tries Left = ${wrongattempts}/ ${maxAttempts}`;
 }
 
 function generateWordDisplay(){
