@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.hangamanbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f0f4ff;
+    padding: 30px;
+}
+
+.hangamanbox img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.hangamanbox img:hover {
+    transform: scale(1.05) rotate(-3deg);
+}
+
+.hangamanbox h1 {
+    margin-top: 15px;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+.gamebox {
+    flex: 1;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.worddisplay {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.worddisplay .letter {
+    list-style: none;
+    width: 40px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 2rem;
+    border-bottom: 3px solid #66a6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.hint-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.guess-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.keyboard button {
+    background: #6c63ff;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    width: 40px;  
+    height: 40px;  
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard button:hover {
+    background: #89f7fe;
+    transform: translateY(-3px);
+}
+
+.keyboard button:disabled {
+    background: #ccc;
+    transform: none;
+    box-shadow: none;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .hangamaxbox, .gamebox {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .keyboard {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 8px;
+    }
+
+    .worddisplay .letter {
+        width: 30px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}

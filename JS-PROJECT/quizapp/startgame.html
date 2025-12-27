@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hangman Quiz Start</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #6c63ff, #89f7fe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .startquiz {
+        background-color: #fff;
+        padding: 50px 60px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+    }
+
+    .startquiz h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .startquiz p {
+        color: #555;
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .startquiz button {
+        background-color: #6c63ff;
+        color: #fff;
+        border: none;
+        padding: 15px 40px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .tagline {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #444;
+    font-weight: 500;
+    }
+    .startquiz button:hover {
+        background-color: #5750d4;
+        transform: translateY(-3px);
+    }
+</style>
+</head>
+<body>
+
+<div class="startquiz">
+    <h1>Hangman Quiz</h1>
+    <p class="tagline">Ready to test your brain? Let’s begin!</p>
+    <button onclick="window.location.href='index.html'">Start Quiz</button>
+</div>
+</body>
+</html>
