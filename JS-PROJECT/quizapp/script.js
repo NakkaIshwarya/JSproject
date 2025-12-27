@@ -48,7 +48,7 @@ function handlekeyboard(){
                     updateHangmanImage();
 
                     if (wrongattempts === maxAttempts){
-                        alert("Game Over! Play Again.");
+                        alert(`💥 GAME OVER 💥\nCorrect Answer: ${currentWord}`);
                         resetGame();
                     }
                 }, 50);
